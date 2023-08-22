@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(0, 85, 0);
+}
+table,
+tr,
+td {
+  border: 2px solid #ffffff;
+  font-size: 20px;
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: center;
+}
+td {
+  padding: 30px;
+}
+caption {
+  font-size: 38px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.Table {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding: 94px 10px;
+  width: 100vw;
+}
+.pink {
+  background-color: #dd1958;
+}
+.black {
+  background-color: #000;
+}
+/* *************************************************************************************************************** */

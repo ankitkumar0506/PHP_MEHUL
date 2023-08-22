@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://127.0.0.1:5500/Tops_tech/HTML/Assiment%20module%202.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head><body><stylsubmit>
+        <style>
+        label{
+            margin-left: 150px;
+            text-align: right;
+            display: inline-block;
+            width: 200px;
+        }
+
+        form{
+            background-color:#6CEDF7;
+            padding: 30px 40px;
+            border: 2px solid #0093FF;
+        }
+        input, select
+
+        {
+            margin-bottom: 3px;
+        }
+    </style>
+
+
+<h3 style="text-align: center; background-color: aqua;color: crimson;">Individuale Registration</h3>
+
+<form action="http://127.0.0.1:5500/Tops_tech/HTML/Assiment%20module%202.html">
+<div action=""><div style="text-align: center;">
+    <h4 style="text-align: left;color: darkred;">User Particulars</h4>
+    <div style="margin-right: 100px;">
+    <div><label>*Login ID</label> <input type="text"><br></div>
+    <div><label>*Passwored</label> <input type="text"><br></div> 
+    <div><label>*Conform Passwored</label> <input type="text"></div>
+</div></div>
+
+
+    <h4 style="text-align: left;color: darkred;">personal Particular</h4><br>
+    <div style="margin-right: 100px; display: flex ; justify-content: space-around;">
+
+    <div><div><label for="Jaimin">Salutation</label>
+
+        <select name="jaimin" id="cars">
+          <option value="volvo">select</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        </div>
+    <div><label>*Middile mane</label> <input type="text"><br></div> 
+
+
+    <div><label for="Jaimin">Resient Status</label>
+
+        <select name="jaimin" id="cars">
+          <option value="volvo">select</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        </div>
+    <div><label>*Email-id</label> <input type="text"></div></div>
+
+    <div><div><label>*First Name</label> <input type="text"><br></div>
+    <div><label>*Last Name</label> <input type="text"><br></div> 
+    <div><label for="Jaimin">country</label>
+
+        <select name="jaimin" id="cars">
+          <option value="volvo">select</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        </div>
+
+
+
+    <div><label>*Mobile No</label> <input type="text"></div></div>
+
+</div>
+
+<h4 style="text-align: left;color: darkred;">Account Pratcicular</h4><br>
+<div style="margin-right: 100px; display: flex ; justify-content: space-around;">
+
+<div>
+<div><label>*15 Digits Account No</label> <input type="text"><br></div>
+
+<div><label for="Jaimin">Salutation</label>
+
+    <select name="jaimin" id="cars">
+      <option value="volvo">select</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    </div>
+
+</div>
+
+<div><div><label>*Nick name</label> <input type="text"><br></div></div>
+</div>
+<h4 style="text-align: left;color: darkred;">Declaration</h4><br>
+<div style="margin-right: 100px; display: flex ; justify-content: space-around;">
+</div>
+
+
+<p>i have read , understood and hereby agree to the terms and conditions in respect of all products and channels.</p>
+
+<p>
+i usderstand that any changes in the terms and conditions applicable to this relationship would be made available to me on request at any IOB branches. i confirm that all accounts under this login name are operated singly and in case of joint account operated by either or survivior/ anyone or surviviore(s) under his/her joint name respectivily. i do hereby declare that information furnished in this form is true to the best of my knowledge and belief.</p>
+
+<div style="display: flex;justify-content: center;gap: 30PX;">
+    <button>submit</button>
+    <button>Reset</button>
+</div>
+
+
+
+   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></form></stylsubmit></body></html>

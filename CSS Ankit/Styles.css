@@ -1,0 +1,19 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: rgb(52, 237, 108);
+  border: 2px solid #ffffff;
+  font-size: 150px;
+  border-collapse: collapse;
+  color: #ff0000;
+  text-align: center;
+}
+p {
+  color: rgb(21, 0, 255);
+  border: 2px solid #c70f0f;
+  font-size: 150px;
+  border-collapse: collapse;
+  color: #000000;
+  text-align: center;
+}
