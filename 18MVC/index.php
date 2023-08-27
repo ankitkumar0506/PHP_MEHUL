@@ -1,3 +1,3 @@
 <?php 
-require_once("cntroller/controller.php");
+require_once("Cntroller/controller.php");
 ?>
