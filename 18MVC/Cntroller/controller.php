@@ -4,6 +4,7 @@
 
 <?php
 
+
 require_once("Model/model.php");
 
 class controller extends model
@@ -122,15 +123,34 @@ public function __construct()
                         {  
                             $data = $_REQUEST;
                             $this->register($data);
-                            echo "<pre>";
-                            print_r($_REQUEST);
-                            echo "</pre>";
+                            // echo "<pre>";
+                            // print_r($_REQUEST);
+                            // echo "</pre>";
 
                         }                                
-                        require_once("View/Register.php");
+                        require_once("View/register.php");
                         break;
-    
 
+
+                        case "/login":
+                            
+                                
+                    
+                                $data = $_REQUEST;
+                                $this->login($data);
+                                // echo "<pre>";
+                                // print_r($_REQUEST);
+                                // echo "</pre>";
+    
+                                                          
+                            require_once("View/login.php");
+                            break;
+    
+                            case "/admin-dasbord":
+                                require_once("View/Admin/adminhome.php");
+                                require_once("<View/Admin/header.php");
+                                require_once("View/Admin/footer.php");       
+                                break;
 
 
                     

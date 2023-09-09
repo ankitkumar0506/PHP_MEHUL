@@ -1,3 +1,10 @@
+<?php
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
@@ -12,19 +19,19 @@
          <div class="text">
             LOGIN
          </div>
-         <form>
+         <form action="" method="post">
             <div class="field">
                <div class="fas fa-envelope"></div>
-               <input type="text" placeholder="Email or Phone">
+               <input type="text" name = "email" placeholder="Email or Phone">
             </div>
             <div class="field">
                <div class="fas fa-lock"></div>
-               <input type="password" placeholder="Password">
+               <input type="password" name="password" placeholder="Password">
             </div>
-            <button>LOGIN</button>
+            <button name="login">LOGIN</button>
             <div class="link">
                Not a member?
-               <a href="#">Signup now</a>
+               <a href="register">Signup now</a>
             </div>
          </form>
       </div>

@@ -1,12 +1,12 @@
 <?php
 
-if(isset($_REQUEST['si_btn']))
-{
-  echo "<pre>";
-  print_r($_REQUEST);
-  echo "</pre>";
+// if(isset($_REQUEST['register']))
+// {
+//   echo "<pre>";
+//   print_r($_REQUEST);
+//   echo "</pre>";
 
-}
+// }
 
 
 ?>
@@ -29,7 +29,7 @@ if(isset($_REQUEST['si_btn']))
 	<div class="main-w3layouts wrapper">
 		<h1>Creative SignUp Form</h1>
 		<div class="main-agileinfo">
-			<div class="agileits-top">
+			<div class="agileits-top">  
 				<form action="" method="post">
 					<input class="text" type="text" name="Username" placeholder="Username" required="">
 					<input class="text email" type="Email" name="Email" placeholder="Email" required="">
@@ -43,11 +43,11 @@ if(isset($_REQUEST['si_btn']))
 						<div class="clear"> </div>
 					</div>
           <!-- <button name="si_btn"  >Submit</button> -->
-					<input type="submit" value="SIGNUP" name="register">
+					<input href="" type="submit" value="SIGNUP" name="register">
 				</form>
-				<p>Don't have an Account? <a href="#"> Login Now!</a></p>
+				<p>Don't have an Account? <a href="login"> Login Now!</a></p>
 			</div>
-		</div>
+		<!-- </div> -->
 		<!-- copyright -->
 		<div class="colorlibcopy-agile">
 			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>

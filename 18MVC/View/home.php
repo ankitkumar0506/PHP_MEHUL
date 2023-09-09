@@ -165,7 +165,7 @@
                     <div class="bs-text">
                         <h2>registration now to get more deals</h2>
                         <div class="bt-tips">Where health, beauty and fitness meet.</div>
-                        <a href="View/Register.php" class="primary-btn  btn-normal">Appointment</a>
+                        <a href="register" class="primary-btn  btn-normal">Appointment</a>
                     </div>
                 </div>
             </div>
@@ -283,7 +283,7 @@
                             <span>Our Team</span>
                             <h2>TRAIN WITH EXPERTS</h2>
                         </div>
-                        <a href="/View/Register.php" class="primary-btn btn-normal appoinment-btn">appointment</a>
+                        <a href="register" class="primary-btn btn-normal appoinment-btn">appointment</a>
                     </div>
                 </div>
             </div>
