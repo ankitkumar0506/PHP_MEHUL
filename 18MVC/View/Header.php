@@ -42,9 +42,10 @@
         </div>
         <nav class="canvas-menu mobile-menu">
             <ul>
-                <li><a href="index">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li><a href="about">About Us</a></li>
                 <li><a href="classes">Classes</a></li>
+                <li><a href="products">Products</a></li>
                 <li><a href="services">Services</a></li>
                 <li><a href="team">Our Team</a></li>
                 <li><a href="#">Pages</a>
@@ -85,9 +86,10 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active"><a href="./index">Home</a></li>
+                            <li class=""><a href="home">Home</a></li>
                             <li><a href="about">About Us</a></li>
                             <li><a href="class">Classes</a></li>
+                            <li><a href="products">Products</a></li>
                             <li><a href="services">Services</a></li>
                             <li><a href="team">Our Team</a></li>
                             <li><a href="#">Pages</a>
