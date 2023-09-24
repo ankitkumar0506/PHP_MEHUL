@@ -9,7 +9,8 @@ require_once("Model/model.php");
 
 class controller extends model
 {       
-    public $baseurl = "http://localhost/PHP_MEHUL/18MVC/Assets/";           
+    public $baseurl = "http://localhost/PHP_MEHUL/18MVC/Assets/";    
+    public $adminurl = "http://localhost/PHP_MEHUL/18MVC/Assets/admin/";       
                         
 public function __construct()
 {
@@ -145,15 +146,16 @@ public function __construct()
                                                           
                             require_once("View/login.php");
                             break;
+
     
-                            case "/admin-dasbord":
-                                require_once("View/Admin/adminhome.php");
-                                require_once("<View/Admin/header.php");
-                                require_once("View/Admin/footer.php");       
-                                break;
+                    case "/admin":
+                        require_once("View/Admin/adminheader.php");
+                        require_once("View/Admin/adminhome.php");
+                        require_once("View/Admin/adminfooter.php");       
+                        break;
 
 
-                    
+                       
 
 
 

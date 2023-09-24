@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TITLE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet" />
+
+    <link href="common-css/ionicons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+
+    <link href="08-comming-soon/css/styles.css" rel="stylesheet" />
+
+    <link href="08-comming-soon/css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-area-wrapper">
+      <div class="main-area center-text" style="background-image: url(images/countdown-7-1600x900.jpg)">
+        <div class="display-table">
+          <div class="display-table-cell">
+            <h1 class="title"><b>Comming Soon</b></h1>
+            <p class="desc font-white">Our website is currently undergoing scheduled maintenance. We Should be back shortly. Thank you for your patience.</p>
+
+            <div id="normal" data-date="2018/01/01">
+			 <div id="countdown">
+    <ul>
+      <li><span id="days" class="list-cd"></span>
+		<span>days</span></li>
+      <li><span id="hours" class="list-cd"></span><span>Hours</span></li>
+      <li><span id="minutes" class="list-cd"></span><span>Minutes</span></li>
+      <li><span id="seconds" class="list-cd"></span><span>Seconds</span></li>
+    </ul>
+  </div>
+ </div>
+
+
+            <a class="notify-btn" href="#"><b>NOTIFY US</b></a>
+
+            <ul class="social-btn">
+              <li class="list-heading">Follow us for update</li>
+              <li>
+                <a href="#"><i class="ion-social-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-googleplus"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-instagram-outline"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+		  </div>
+          <!-- display-table -->
+        </div>
+        <!-- display-table-cell -->
+      </div>
+      <!-- main-area -->
+    </div>
+    <!-- main-area-wrapper -->
+
+    <!-- SCIPTS -->
+
+    <script src="common-js/jquery-3.1.1.min.js"></script>
+
+    <script src="common-js/jquery.countdown.min.js"></script>
+
+    <script src="common-js/scripts.js"></script>
+  </body>
+
+  <script>(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());</script>
+</html>
