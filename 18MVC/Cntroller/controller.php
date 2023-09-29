@@ -137,8 +137,8 @@ public function __construct()
                             
                                 
                     
-                                $data = $_REQUEST;
-                                $this->login($data);
+                                // $data = $_REQUEST;
+                                // $this->login($data);
                                 // echo "<pre>";
                                 // print_r($_REQUEST);
                                 // echo "</pre>";

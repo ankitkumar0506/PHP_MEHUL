@@ -93,20 +93,20 @@ class model
         if($sqlex->num_rows > 0)
         {
             $userdata = $sqlex->fetch_object();
-             echo "<pre>";
-            print_r($userdata);
-            echo "</pre>";
+            //  echo "<pre>";
+            // print_r($userdata);
+            // echo "</pre>";
             
-        //     if($userdata->role_as == 1)
-        //     {
-        //         echo "Admin side";
-        //         header("location:admin-dashboard");
-        //     }
-        //     else
-        //     {
-        //         // echo "User side";
-        //         header("location:home");
-        //     }
+            if($userdata->role_as == 1)
+            {
+                echo "Admin side";
+                header("location:admin-dashboard");
+            }
+            else
+            {
+                // echo "User side";
+                header("location:home");
+            }
 
         }
         // else
